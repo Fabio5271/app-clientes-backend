@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: app-clientes
+  datasource:
+    url: jdbc:postgresql://localhost:5432/app_clientes
+    username: admin
+    password: 123qwe!@#
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+logging:
+  level:
+    org:
+      hibernate:
+        sql: debug
+        type:
+          descriptor:
+            converter: trace
+            sql:
+              BasicBinder: trace
+server:
+  port: 8081
