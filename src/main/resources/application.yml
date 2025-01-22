@@ -25,5 +25,7 @@ logging:
             converter: trace
             sql:
               BasicBinder: trace
+      springframework:
+        security: trace
 server:
   port: 8081
