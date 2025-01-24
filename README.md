@@ -1,6 +1,6 @@
 # AppClientesBackend
 
-Back-end do meu app de cadastro de clientes, desenvolvido utilizando Spring Boot 3 (Java 17), FlyWay, MapStruct e Lombok. Utiliza banco de dados PostgreSQL 17. 
+Back-end do meu app de cadastro de clientes, desenvolvido utilizando Spring Boot 3 (Java 17), Flyway, MapStruct e Lombok. Utiliza banco de dados PostgreSQL 17. 
 
 ## Requisitos:
 - Java JDK 17</br>
